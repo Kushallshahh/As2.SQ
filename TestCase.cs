@@ -14,7 +14,88 @@ namespace TestCases
         public class TriangleTest1
 
         {
+//Scalene
+[Test]
+public void ValidScaleneTriangle_Input30and40and50_OutputValidScaleneTriangle()
+{
+    // Arrange
+    int side1 = 30;
+    int side2 = 40;
+    int side3 = 50;
+    string expected = "A triangle is formed and it is a SCALENE";
 
+    // Act
+    string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+    // Assert
+    Assert.AreEqual(expected, actual);
+}
+
+[Test]
+public void ValidScaleneTriangle_Input45and60and75_OutputValidScaleneTriangle()
+{
+    // Arrange
+    int side1 = 45;
+    int side2 = 60;
+    int side3 = 75;
+    string expected = "A triangle is formed and it is a SCALENE";
+
+    // Act
+    string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+    // Assert
+    Assert.AreEqual(expected, actual);
+}
+
+
+[Test]
+public void ValidScaleneTriangle_Input55and72and87_OutputValidScaleneTriangle()
+{
+    // Arrange
+    int side1 = 55;
+    int side2 = 72;
+    int side3 = 87;
+    string expected = "A triangle is formed and it is a SCALENE";
+
+    // Act
+    string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+    // Assert
+    Assert.AreEqual(expected, actual);
+}
+
+[Test]
+public void ValidScaleneTriangle_Input25and63and48_OutputValidScaleneTriangle()
+{
+    // Arrange
+    int side1 = 25;
+    int side2 = 63;
+    int side3 = 48;
+    string expected = "A triangle is formed and it is a SCALENE";
+
+    // Act
+    string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+    // Assert
+    Assert.AreEqual(expected, actual);
+}
+
+
+[Test]
+public void ValidScaleneTriangle_Input20and35and45_OutputValidScaleneTriangle()
+{
+    // Arrange
+    int side1 = 20;
+    int side2 = 35;
+    int side3 = 45;
+    string expected = "A triangle is formed and it is a SCALENE";
+
+    // Act
+    string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+    // Assert
+    Assert.AreEqual(expected, actual);
+}
 
  //Isosceles
  [Test]
