@@ -15,6 +15,58 @@ namespace TestCases
 
         {
 
+
+ //Isosceles
+ [Test]
+ public void ValidIsoscelesTriangle_Input50and50and80_OutputValidIsoscelesTriangle()
+ {
+     // Arrange
+     int side1 = 50;
+     int side2 = 50;
+     int side3 = 80;
+     string expected = "A triangle is formed and it is an ISOSCELES";
+
+     // Act
+     string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+     // Assert
+     Assert.AreEqual(expected, actual);
+ }
+
+ [Test]
+ public void ValidIsoscelesTriangle_Input30and40and30_OutputValidIsoscelesTriangle()
+ {
+     // Arrange
+     int side1 = 30;
+     int side2 = 40;
+     int side3 = 30;
+     string expected = "A triangle is formed and it is an ISOSCELES";
+
+     // Act
+     string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+     // Assert
+     Assert.AreEqual(expected, actual);
+ }
+
+ [Test]
+ public void ValidIsoscelesTriangle_Input70and40and70_OutputValidIsoscelesTriangle()
+ {
+     // Arrange
+     int side1 = 70;
+     int side2 = 40;
+     int side3 = 70;
+     string expected = "A triangle is formed and it is an ISOSCELES";
+
+     // Act
+     string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+     // Assert
+     Assert.AreEqual(expected, actual);
+ }
+
+
+            
              //Equilateral
  [Test]
  public void ValidEquilateralTriangle_Input60and60and60_OutputValidEquilateralTriangle()
