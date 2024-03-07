@@ -15,7 +15,22 @@ namespace TestCases
 
         {
 
-            
+             //Equilateral
+ [Test]
+ public void ValidEquilateralTriangle_Input60and60and60_OutputValidEquilateralTriangle()
+ {
+     // Arrange
+     int side1 = 60;
+     int side2 = 60;
+     int side3 = 60;
+     string expected = "A triangle is formed and it is an EQUILATERAL";
+
+     // Act
+     string actual = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+     // Assert
+     Assert.AreEqual(expected, actual);
+ }
             //Invalid 0
             [Test]
             public void ZeroLengthSide_Input0and40and50_OutputInvalidTriangle()
